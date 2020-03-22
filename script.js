@@ -82,7 +82,7 @@ $(document).ready(function() {
     
     // display 5 day forecast
     function displayDailyForecast(city) {
-        var queryURL =  "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=f795d0f35cc4e1a3c16dc76565d1114a&units=imperial";
+        var queryURL =  "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=f795d0f35cc4e1a3c16dc76565d1114a&units=imperial";
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -101,7 +101,7 @@ $(document).ready(function() {
                 // create h5 element set text to date string from unix time set to local timezone
                 var date = $("<h5>").text(new Date(forecast.dt * 1000).toLocaleDateString("en-US"));
                 // create img element with the weather icon
-                var icon = $(`<img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="weather icon">`);
+                var icon = $(`<img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="weather icon">`);
                 // create a small element for the weather description
                 var desc = $("<small>").text(forecast.weather[0].description);
                 // create a p elemeent that displays the temp in farenheit
