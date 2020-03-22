@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // retrieves the UV value and displays whether it's a favorable, moderate or severe value
     function getCurrentUV(lat, long) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=f795d0f35cc4e1a3c16dc76565d1114a&lat=" + lat + "&lon=" + long;
+        var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=f795d0f35cc4e1a3c16dc76565d1114a&lat=" + lat + "&lon=" + long;
         var uvP = "";
         // retrieves data from the openweather API for 5 day forecast
         $.ajax({
@@ -61,7 +61,7 @@ $(document).ready(function() {
             // create an img element and set the src as the icon value from the response
             // and set the alt attribute, then append the img to the h2 element
             var icon = $("<img>")
-            icon.attr("src", `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`);
+            icon.attr("src", `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`);
             icon.attr("alt", "weather icon");
             titleH2.append(icon);
 
