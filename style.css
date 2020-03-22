@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 60px;
+}
+
+.list-group-item {
+    color: black;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+}
+
+.hide {
+    display: none;
+}
+
+.current-forecast {
+    background-color: rgb(59, 141, 247);
+}
+
+.favorable, .moderate, .severe {
+    color: white;
+    padding: 2px 6px;
+}
+
+.favorable {
+    background-color: green;
+}
+
+.moderate {
+    background-color: orange;
+    
+}
+
+.severe {
+    background-color: red;
+}
+
+.daily {
+    background-color: rgb(138, 176, 247);
+    text-align: center;
+}
+
+.daily h5 {
+    font-weight: bold;
+}
+
+.daily img {
+    margin: 0 auto;
+}
