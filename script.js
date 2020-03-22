@@ -82,7 +82,7 @@ $(document).ready(function() {
     
     // display 5 day forecast
     function displayDailyForecast(city) {
-        var queryURL =  "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=f795d0f35cc4e1a3c16dc76565d1114a&units=imperial";
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=f795d0f35cc4e1a3c16dc76565d1114a&units=imperial&mode=json";
         $.ajax({
             url: queryURL,
             method: "GET"
